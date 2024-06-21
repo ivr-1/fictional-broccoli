@@ -1,0 +1,500 @@
+
+/* Home section  which has the app name and nav bar. The styling is applied by id */
+
+#home {
+    background-color:  #212e6d;
+    padding-bottom: 1cm;
+    margin-left:-1cm;
+    margin-right:-1cm;
+    margin-top:-1cm;
+    padding-top: 2cm;
+    padding-bottom: 3cm;
+   }
+
+/* Application name inside the home section. The styling is applied by tag name */
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    font-family: "Oswald", sans-serif;
+    font-size: 40px;
+    position: relative;
+    color: rgb(240, 234, 245);
+    float: left;
+    padding-left: 70px;
+    margin-top: -2vh;
+  }
+
+  body {
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        width: 100%; /* Full width */
+        text-align: center;
+        padding: 10px 0;
+        /* Reset any margins */
+        margin: 0;
+        /* Use flexbox for centering */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* Fixed positioning to override any parent styles */
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #212e6d;
+    }
+}
+/* Phone number and email under the name */
+
+.contact {
+    margin-top: 3px;
+    font-size: 15px;
+    line-height: 25px;
+    padding-right: 5px;
+    text-align: right;
+    font-weight: 300;
+}
+
+/* Email/Phone logo */
+
+.cl {
+    width: 11px;
+    padding-right: 5px;
+    filter: invert(100%);
+}
+
+.cl2 {
+    display:none;
+    width: 11px;
+    padding-right: 5px;
+    filter: invert(100%);
+}
+
+
+/* Navigation Bar Container*/
+
+  .topdiv {
+    float: right;
+    padding-right: 2cm;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .topdiv {
+        background-color:#212e6d;
+        width: 100%; /* Full width */
+        text-align: center;
+        padding: 10px 0;
+        /* Reset any margins */
+        margin: 0;
+        /* Use flexbox for centering */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* Fixed positioning to override any parent styles */
+        position: fixed;
+        top: 120px;
+        left: 0;
+        right: 0;
+    }
+}
+  
+/* Navigation Bar Buttons */
+  .topmenu {
+    font-family: "Oswald", sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px;
+    margin-right: 5px;
+    font-size: 20px;
+    text-decoration:none;
+    border-radius: 1mm;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .topmenu {
+        font-size: 18px;
+    }
+}
+  
+  .topmenu:hover {
+    color: rgb(0, 0, 0);
+  }
+
+button{
+    font-size: 15px;
+    border: transparent;
+    width: fit-content;
+    background-color: rgb(170, 192, 222);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+/* Avatar image next to bio */
+.avatar {
+    width:500px;
+    margin-left: -100px;
+}
+
+@media screen and (max-width: 1000px) {
+    .avatar {
+        margin: 0 auto;
+        margin-top: -50px;
+        width: 80%;
+        max-width: 500px;
+    }
+}
+
+/* Main Bio*/
+.bioblock {
+    display:flex;
+    align-items:center;
+    justify-content: center;    
+}
+
+@media screen and (max-width: 1000px) {
+    .bioblock {
+        text-align: center;
+        width: 100%;
+        padding-top: 100px;
+        /* Reset any margins */
+        margin: 0;
+        /* Use flexbox for centering */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* Fixed positioning to override any parent styles */
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.bio {
+    justify-content: center;
+}
+
+.bioheader {
+    width: fit-content;
+    height: fit-content;
+    font-family: "Oswald", sans-serif;
+    font-size: 45pt;
+    font-weight: 600;
+    color: #212e6d;
+
+}
+
+
+@media screen and (max-width: 1000px){
+    .bioheader {
+          font-family: "Roboto", sans-serif;
+        font-size: 30pt;
+        width: 100%;
+        /* Reset any margins */
+        margin: 0;
+        /* Use flexbox for centering */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* Fixed positioning to override any parent styles */
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+        
+}
+
+.biotext {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 18pt;
+    width: 700px;
+    color: rgb(106, 105, 105);
+
+}
+
+@media screen and (max-width: 1000px) {
+    .biotext {
+        font-size: 13pt;
+        text-align: left;
+        width: 100%;
+        max-width: 500px;
+        /* Remove fixed positioning */
+      }
+}
+/* Mid-Document Stuff*/
+.profile-subheader {
+    color: #212e6d;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 25pt;
+    padding-left: 50px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .profile-subheader {
+        text-align: center;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+.profile-block {
+    display:flex;
+    font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+    .profile-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 50px;
+    }
+}
+
+.skill {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    width: 180px;
+    height: 180px;
+    font-weight: 500;
+    display:flex;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.5); 
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); 
+    margin: 20px;
+    padding: 20px;
+
+
+}
+
+@media screen and (max-width: 1000px) {
+    .skill {
+        font-size: 8pt;
+        width: 120px; /* Full width on smaller screens */
+        height: 120px;
+        margin: 20px;
+        padding: 12px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); 
+    }
+}
+
+.skillicon {
+    width:50px;
+    padding-bottom: 35px;
+}
+
+@media screen and (max-width: 1000px) {
+    .skillicon {
+        width: 38px;
+        padding-bottom: 10px;
+    }
+}
+
+.projects-block {
+    font-family: "Roboto", sans-serif;
+    margin-left: 60px;
+}
+
+@media screen and (max-width: 1000px) {
+    .projects-block {
+        margin: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 15px;
+    }
+}
+
+.projects-subheader {
+    font-weight: 600;
+    font-size: 15pt;
+    margin-bottom: -10px;
+}
+.projects-bullet {
+    font-weight: 300;
+}
+
+.line {
+    width: 60%;
+    height: 1px;
+    margin-left: 100px;  
+    margin-top: 0px;        
+    background-color: rgba(0, 0, 0, 0.2); 
+}
+
+@media screen and (max-width: 1000px) {
+    .line {
+        margin: 0px;
+        width: 100%;
+    }
+}
+
+.recommendations-block {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .recommendations-block {
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 12pt;
+        width: 100%; 
+    }
+}
+
+.recommendation-box {
+    display: flex;
+    text-align: left;
+    font-style: italic;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    width: 280px;
+    font-weight: 300;
+    display:flex;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.5); 
+    border-width: 2px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .recommendation-box {
+        width: 350px;
+        padding: 20px;
+    }
+}
+
+/* RECOMMENDATION FORM */
+.recform-block {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    max-width: 610px;
+    margin: 50px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.recform-header {
+    font-weight: 500;
+    font-size: 20pt;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.recform-name,
+.recform-message {
+    width: 100%;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 10pt;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.recform-name {
+    height: 40px;
+}
+
+.recform-message {
+    height: 100px;
+    resize: vertical;
+}
+
+.recform-name::placeholder,
+.recform-message::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 10pt;
+}
+
+.recform-button {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    width: 150px;
+    color: #212e6d;
+    border: 2px solid #212e6d;
+    border-radius: 4px;
+    padding: 10px 0;
+    margin: 20px auto 0;
+    display: block;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.recform-button:hover {
+    background-color: #212e6d;
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    .recform-block {
+        margin: 30px auto;
+    }
+
+    .recform-header {
+        font-size: 18pt;
+        text-align: center;
+    }
+}
+
+/* FOOTER ARROW */
+.arrow {
+    width: 30px;
+    padding-left: 30px;
+}
+
+.arrow:hover {
+    cursor: pointer;
+    filter: invert(50%);
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .arrow {
+        display: none;
+    }
+}
+
+/* TODO
+- On hover fist bump to goat emoji
+- menu scrolling
+- mobile version
+- scroll inside of the recommendation box
+
+  <input type="text" id="name" name="name" class="recform-name" placeholder="Name (optional)">
+  <textarea id="message" name="message" class="recform-message" placeholder="Message"></textarea>
+ */

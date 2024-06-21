@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet"> 
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+  <body>
+      <section id="home">
+        <header>
+          TOM WATSON JR. 
+          <div class="contact">
+            <a href="mailto:tom@ibm.com">
+              <img src="/HTML Final Project/Assets/mail.svg" alt="Email" id="email-default" class="cl">
+              <img src="/HTML Final Project/Assets/mail-b.svg" alt="Email" id="email-hover" class="cl2">  
+            </a>
+              <a href="mailto:tom@ibm.com" style="color: inherit; text-decoration: none;">tom@ibm.com</a><br>
+            <a href="tel:+18184249534">
+              <img src="Assets/call.svg" alt="Call" id="call-default" class="cl">
+              <img src="Assets/call-b.svg" alt="Call" id="call-hover" class="cl2"> 
+            </a>
+            <a href="tel:+18184249534" style="color: inherit; text-decoration: none;">+1(818)424-9534</a>
+
+          </div>
+        </header>
+        <nav>
+          <div class="topdiv" id="top">
+            <a href="#about"><button class="topmenu">About Me</button></a>
+            <a href="#skills"><button  class="topmenu">Skills</button></a>
+            <a href="#projects"><button  class="topmenu">Projects</button></a>
+            <a href="#recform"><button  class="topmenu">Recommendations</button></a>
+          </div>
+        </nav>
+      </section>
+      <div class="bioblock"> <!-- BIO -->
+        <img src="/HTML Final Project/Assets/Avatar.png" class="avatar" alt="Tom_portrait">
+        <div class="bio">
+          <h1 class="bioheader">Hi, I'm Tom Watson!🤘</h1>
+          <p class="biotext">
+            I'm a business leader with over 40 years of experience in technology and management. As CEO of IBM from 1956 to 1971, I led the company's transformation into a leader in computing, overseeing the launch of groundbreaking products like the System/360 mainframe. I'm an avid believer in R&D investment to drive innovation.
+          </p>
+        </div>
+      </div>
+      <h1 class="profile-subheader" id="skills"> Skills </h1>
+      <div class="profile-block"> <!-- SKILLS -->
+        <div class="skill"> 
+          <img src="/HTML Final Project/Assets/html.png" class="skillicon">
+          HTML <br>
+          2 years of experience
+        </div>
+        <div class="skill"> 
+          <img src="/HTML Final Project/Assets/Javascript.png" class="skillicon">
+          JavaScript <br>
+          1.5 years of experience
+        </div>
+        <div class="skill"> 
+          <img src="/HTML Final Project/Assets/java.png" class="skillicon">
+          Java <br>
+          .5 years of experience
+        </div>
+        <div class="skill"> 
+          <img src="/HTML Final Project/Assets/react.png" class="skillicon">
+          React <br>
+          1 year of experience
+        </div>
+        <div class="skill"> 
+          <img src="/HTML Final Project/Assets/node-js.png" class="skillicon">
+          Node.JS <br>
+          1 year of experience
+        </div>
+        <div class="skill"> 
+          <img src="/HTML Final Project/Assets/css-3.png" class="skillicon">
+          CSS <br>
+          2 years of experience
+        </div>
+      </div> 
+      <h1 class="profile-subheader" id="projects"> Projects </h1> <!-- PROJECTS -->
+      <div class="projects-block">
+        <p class="projects-subheader">Computer Modernization</p>  <!-- CHATBOT -->
+        <ul>
+          <li class="projects-bullet">Led IBM's transition from electromechanical tabulating machines to electronic computers, overseeing development of the IBM 700 series mainframes</li>
+        </ul>
+        <div class="line"></div>
+        <p class="projects-subheader">SAGE Defense</p>  <!-- SENTIMENT ANALYZER -->
+        <ul>
+          <li class="projects-bullet">Collaborated with the U.S. Air Force to develop the Semi-Automatic Ground Environment (SAGE) air defense system, integrating radar and computer technology</li>
+        </ul>
+        <div class="line"></div>
+        <p class="projects-subheader">IBM System/360</p>  <!-- FASHION WEBSITE -->
+        <ul>
+          <li class="projects-bullet">Spearheaded the development of the System/360 family of computers, creating a line of compatible machines that revolutionized the computer industry
+          </li>
+        </ul>
+     </div>
+     <h1 class="profile-subheader"> Recommendations </h1> <!-- Recommendations -->
+     <div class="recommendations-block">
+        <div class="recommendation-box">
+          "Tom is a visionary leader who quickly grasps emerging technologies. He translates technical concepts into business opportunities brilliantly. His forward-thinking approach is crucial for IBM's leadership in computing. Tom fosters innovation and has great potential to shape the industry."
+        </div>
+        <div class="recommendation-box">
+          "Working with Tomz has been an extraordinary experience. He possesses both technical acumen and business savvy. Tom consistently ensures IBM remains competitive and innovative. For any future tech endeavors, I'd want Tom leading the charge."
+        </div>
+        <div class="recommendation-box">
+          "I collaborated with Tom during IBM's transition to electronic computing. He showed remarkable foresight in steering the company through this revolution. Tom understands both technical and market aspects deeply. He's an asset to any organization in the industry."        </div>
+     </div>
+<div class="recform-block" id="recform">  <!-- RECOMMENDATION FORM -->
+  <div class="recform-header"> Leave a Recommendation </div>
+  <textarea id="name" name="name" class="recform-name" placeholder="Name (optional)"></textarea> <br>
+  <textarea id="message" name="message" class="recform-message" placeholder="Message"></textarea>
+  <div class="recform-button" onclick="addRecommendation()">Submit</div>
+</div>
+<div><!-- GET ME UP TOP BUTTOM -->
+  <a href=#top>
+  <img src="/HTML Final Project/Assets/Arrow_Up.png" class="arrow"></a>
+</div>
+    <footer>
+    
+    </footer>
+  </body>
+</html>
